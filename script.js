@@ -1,0 +1,1 @@
+document.getElementById('year').textContent=new Date().getFullYear();const search=document.getElementById('search');const card=document.querySelector('.livery-card');const empty=document.getElementById('empty');search.addEventListener('input',()=>{const match=card.textContent.toLowerCase().includes(search.value.toLowerCase());card.hidden=!match;empty.hidden=match;});
