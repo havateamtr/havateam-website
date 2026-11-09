@@ -1,75 +1,91 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="tr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sitemiz Bakımda | Geliştirme Aşamasında</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#07111c">
+  <meta name="description" content="HavaTeam yakında yeni yüzüyle yayında. MSFS 2024 livery arşivimiz için hazırlıklarımız sürüyor.">
+  <title>HavaTeam | Bakım Çalışması</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="background-animation">
-        <div class="circle circle-1"></div>
-        <div class="circle circle-2"></div>
-    </div>
+  <div class="ambient ambient-one"></div>
+  <div class="ambient ambient-two"></div>
+  <div class="grid-overlay"></div>
 
-    <main class="maintenance-container">
-        <div class="glass-card">
-            <div class="badge">
-                <span class="pulse-dot"></span>
-                <span>Geliştirme Aşamasında</span>
-            </div>
+  <header class="topbar">
+    <a class="brand" href="#" aria-label="HavaTeam ana sayfa">
+      <span class="brand-mark" aria-hidden="true">
+        <svg viewBox="0 0 48 48" role="img">
+          <path d="M7 31.5 23.8 7l17.2 24.5-17.2-8.1L7 31.5Z" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round"/>
+          <path d="m14 34 9.8-4.7 10.2 4.7M23.8 7v16.4" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/>
+        </svg>
+      </span>
+      <span class="brand-name">HAVA<span>TEAM</span></span>
+    </a>
+    <div class="top-meta"><span class="live-dot"></span> SİSTEM HAZIRLANIYOR</div>
+  </header>
 
-            <div class="icon-wrapper">
-                <i class="fa-solid fa-gears rotating-gear"></i>
-            </div>
+  <main class="hero">
+    <section class="copy">
+      <div class="eyebrow"><span class="eyebrow-line"></span> MSFS 2024 • LIVERY PLATFORM</div>
+      <h1>YENİ BİR<br><span>ROTAYA</span><br>HAZIRLANIYORUZ.</h1>
+      <p class="lead">HavaTeam hangarında hazırlıklar sürüyor. Uçuş simülasyonu tutkunları için yeni livery arşivimizi çok yakında yeniden hizmete açıyoruz.</p>
 
-            <h1>Çok Yakında Buradayız!</h1>
-            <p class="description">
-                Web sitemizi sizlere daha iyi bir deneyim sunmak için baştan aşağı yeniliyor ve geliştiriyoruz. Çok yakında harika yeniliklerle karşınızda olacağız.
-            </p>
-
-            <div class="progress-box">
-                <div class="progress-info">
-                    <span>Genel İlerleme</span>
-                    <span id="progress-text">Yükleniyor...</span>
-                </div>
-                <div class="progress-bar">
-                    <div class="progress-fill" id="progress-fill"></div>
-                </div>
-            </div>
-
-            <div class="action-section">
-                <p class="notify-title">Yeniliklerden haberdar olmak ister misiniz?</p>
-                <form id="notify-form" class="notify-form">
-                    <div class="input-group">
-                        <i class="fa-regular fa-envelope"></i>
-                        <input type="email" id="email-input" placeholder="E-posta adresinizi girin..." required>
-                        <button type="submit">
-                            <span>Haberdar Et</span>
-                            <i class="fa-solid fa-arrow-right"></i>
-                        </button>
-                    </div>
-                </form>
-                <div id="success-message" class="success-message hidden">
-                    <i class="fa-solid fa-circle-check"></i> Teşekkürler! Listemize başarıyla eklendiniz.
-                </div>
-            </div>
-
-            <footer class="card-footer">
-                <div class="social-links">
-                    <a href="https://github.com" target="_blank" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
-                    <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
-                    <a href="https://twitter.com" target="_blank" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a>
-                </div>
-                <p class="copyright">&copy; 2026 Tüm Hakları Saklıdır.</p>
-            </footer>
+      <div class="status-card">
+        <div class="status-icon">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3 3.8 7.2v5.6c0 4.4 3.5 7.4 8.2 8.2 4.7-.8 8.2-3.8 8.2-8.2V7.2L12 3Z" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="m8.3 12.1 2.4 2.4 5-5.1" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
         </div>
-    </main>
+        <div>
+          <strong>Planlı bakım çalışması</strong>
+          <span>Web sitemiz geçici olarak hizmet dışıdır.</span>
+        </div>
+        <span class="status-tag">DEVAM EDİYOR</span>
+      </div>
 
-    <script src="script.js"></script>
+      <div class="bottom-note">
+        <span class="note-rule"></span>
+        <span>GÖKYÜZÜNDE GÖRÜŞMEK ÜZERE</span>
+      </div>
+    </section>
+
+    <section class="visual" aria-label="Havacılık temalı radar illüstrasyonu">
+      <div class="coordinates coord-top">HTM / 2026 <span>40°58' N — 028°49' E</span></div>
+      <div class="radar">
+        <div class="radar-ring ring-one"></div>
+        <div class="radar-ring ring-two"></div>
+        <div class="radar-ring ring-three"></div>
+        <div class="radar-cross cross-h"></div>
+        <div class="radar-cross cross-v"></div>
+        <div class="radar-sweep"></div>
+        <div class="radar-center"></div>
+        <span class="radar-blip blip-one"></span>
+        <span class="radar-blip blip-two"></span>
+        <span class="radar-blip blip-three"></span>
+        <svg class="plane" viewBox="0 0 180 180" aria-hidden="true">
+          <path d="M91 18 104 77 158 106 158 119 104 105 99 145 119 157 119 165 91 157 63 165 63 157 83 145 78 105 24 119 24 106 78 77 91 18Z" fill="currentColor"/>
+        </svg>
+        <div class="radar-label label-a">HDG 090°</div>
+        <div class="radar-label label-b">ALT — — —</div>
+      </div>
+      <div class="flight-path">
+        <span class="path-point"></span>
+        <span class="path-dash"></span>
+        <span class="path-point end"></span>
+      </div>
+      <div class="coordinates coord-bottom"><span>HANGAR 01</span> <span>FLIGHT SIMULATION</span></div>
+      <div class="side-code">HAVATEAM • TURKEY</div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <span>© <span id="year">2026</span> HAVATEAM</span>
+    <span class="footer-center">BU BİR BAKIM EKRANIDIR</span>
+    <span>MSFS 2024 LIVERY COMMUNITY</span>
+  </footer>
+  <script src="script.js"></script>
 </body>
 </html>
