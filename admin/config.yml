@@ -1,0 +1,42 @@
+
+backend:
+  name: turbo-github
+  turbo_site_id: 55154c4c-56a7-47b6-b5d6-165d6b6ffdf4
+
+media_folder: "images/liveries"
+public_folder: "/images/liveries"
+
+collections:
+  - name: "aircraft"
+    label: "Aircraft Models"
+    folder: "content/aircraft"
+    create: true
+    slug: "{{slug}}"
+    extension: "json"
+    format: "json"
+    fields:
+      - { label: "Aircraft Model", name: "title", widget: "string" }
+
+  - name: "liveries"
+    label: "Liveries"
+    folder: "content/liveries"
+    create: true
+    slug: "{{slug}}"
+    extension: "json"
+    format: "json"
+    fields:
+      - { label: "Livery Name", name: "title", widget: "string" }
+      - { label: "Aircraft Model", name: "aircraft", widget: "relation", collection: "aircraft", search_fields: ["title"], value_field: "title", display_fields: ["title"] }
+      - label: "Simulator Compatibility"
+        name: "simulators"
+        widget: "select"
+        multiple: true
+        options: ["MSFS 2020", "MSFS 2024"]
+      - { label: "Cover Image", name: "image", widget: "image" }
+      - { label: "Short Description", name: "description", widget: "text" }
+      - { label: "Flightsim.to URL", name: "download_url", widget: "string" }
+      - label: "Publication Status"
+        name: "status"
+        widget: "select"
+        options: ["Draft", "Published"]
+      - { label: "Date Added", name: "date_added", widget: "datetime", default: "{{now}}", date_format: "YYYY-MM-DD", time_format: false }
